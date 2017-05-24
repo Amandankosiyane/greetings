@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-     <meta charset="utf-8">
-     <title>Greet exercise</title>
-  <link rel="stylesheet" href="greet.css">
+    <meta charset="utf-8">
+    <title>Greet exercise</title>
+    <link rel="stylesheet" href="greet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+
+
+    </script>
 </head>
+
 <body>
     <h1 id="Greeting" align="center">Greeting</h1>
 
@@ -12,20 +20,15 @@
         <label><b>Name:</b></label>
 
         <input id="user_input" type="text" name="name" value="" placeholder="Type text">
-    <hr/>
-          <input type="radio" name="language"
-           value="English" id="English">English
-    <input type="radio" name="language"
-           value="IsiXhosa" id="IsiXhosa">IsiXhosa
-    <input type="radio" name="language"
-           value="Afrikaans" id="Afrikaans">Afrikaans
-      <hr/>
+        <hr/>
+        <input type="radio" name="language" value="English" id="English">English
+        <input type="radio" name="language" value="IsiXhosa" id="IsiXhosa">IsiXhosa
+        <input type="radio" name="language" value="Afrikaans" id="Afrikaans">Afrikaans
+        <hr/>
 
-         <input type="button" value="Greet Me!" onclick="showInp()" id="greetbutton">
+        <input type="button" value="Greet Me!" onclick="showInp()" id="greetbutton">
         <button id="resetButton">reset</button>
-
-
-  </form>
+    </form>
 
     <hr/>
     <h3 onclick="clickCounter()"></h3>
@@ -33,7 +36,9 @@
     <p id='show'><span id="toDisplay"></span></p>
 
 </body>
+<script src="clearReset.js"></script>
+<script src="clickcounter.js"></script>
+<script src="showinput.js"></script>
+<script src="greet.main.js"></script>
 
- <script src="greet.js" charset="utf-8">
-</script>
 </html>
