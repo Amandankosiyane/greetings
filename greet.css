@@ -1,9 +1,8 @@
 html{
-   background-image: url(file:///home/bootcamp/Downloads/Elephant_Luv.jpg);
+   background-image: url(background.jpg);
+   background-attachment: fixed;
     background-size: cover;
     margin: 10px;
-
-
 }
 
 hr{
@@ -18,6 +17,7 @@ hr{
     border-color:  black;
     padding: 1%;
     max-height: inherit;
+    text-shadow: 1px 1px 2px pink, 0 0 25px pink, 0 0 5px deeppink;
 }
 
 #inpName{
@@ -62,4 +62,12 @@ background-color: #FF69B4;
   border-radius: 60px;
   font-weight: bold;
   font-style: oblique;
+}
+
+#result{
+    font-size: 5em;
+    font-weight: bolder;
+    font-style: oblique;
+    text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
+    text-align: center;
 }

@@ -1,23 +1,36 @@
+var display = document.querySelector('#toDisplay');
+var name = document.querySelector("#user_input").value;
+var english = document.querySelector('#English');
+var xhosa = document.querySelector('#IsiXhosa');
+var afrikaans = document.querySelector('#Afrikaans');
 function showInp() {
-    var a = document.getElementById("user_input").value;
 
-    if (document.getElementById('English').checked === true && a.length > 0 && a !== " " && namesGreeted[a] === undefined) {
-        namesGreeted[a] = 1;
+    if (english.checked === true && name.length > 0 && name !== " " && namesGreeted[name] === undefined) {
+        namesGreeted[name] = 1;
 
-        document.getElementById('toDisplay').innerHTML = "Hello, " + document.getElementById("user_input").value;
-        var container = clickCounter();
+        display.innerHTML = "Hello, " + name;
+        clickCounter();
 
-    } else if (document.getElementById('IsiXhosa').checked === true && a.length > 0 && a !== " " && namesGreeted[a] === undefined) {
-        namesGreeted[a] = 1;
+    } else if (xhosa.checked === true && name.length > 0 && name !== " " && namesGreeted[name] === undefined) {
+        namesGreeted[name] = 1;
 
-        var container = clickCounter();
+        clickCounter();
 
-        document.getElementById('toDisplay').innerHTML = "Molo, " + document.getElementById("user_input").value;
-    } else if (document.getElementById('Afrikaans').checked === true && a.length > 0 && a !== " " && namesGreeted[a] === undefined) {
-        namesGreeted[a] = 1;
+        display.innerHTML = "Molo, " + name;
+    } else if (afrikaans.checked === true && name.length > 0 && name !== " " && namesGreeted[name] === undefined) {
+        namesGreeted[name] = 1;
 
-        var container = clickCounter()
+        clickCounter()
 
-        document.getElementById('toDisplay').innerHTML = "Hallo, " + document.getElementById("user_input").value;
+        display.innerHTML = "Hallo, " + name;
     }
+    //..............................
+    else if (english.checked === true && name.length > 0 && name !== " " && namesGreeted[name] !== undefined) {
+        display.innerHTML = "Hello, " + name + " Welcome back";
+    } else if (xhosa.checked === true && name.length > 0 && name !== " " && namesGreeted[name] !== undefined) {
+        display.innerHTML = "Molo, " + name + " Wamkelekile kwakhona";
+    } else if (afrikaans.checked === true && name.length > 0 && name !== " " && namesGreeted[name] !== undefined) {
+        display.innerHTML = "Hallo, " + name + " Welkom terug"
+    }
+    document.getElementById("user_input").value = "";
 }
