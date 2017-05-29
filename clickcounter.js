@@ -1,13 +1,16 @@
-function clickCounter() {
-    var results = document.querySelector('#result');
-    if (typeof(Storage) !== undefined) {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount) + 1;
+function clickCount() {
+        // var results = document.querySelector('#result');
+        if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                } else {
+                        localStorage.clickcount = 1;
+                }
+                return localStorage.clickcount;
+                // results.innerHTML = localStorage.clickcount ;
         } else {
-            localStorage.clickcount = 1;
+                return "Sorry, your browser does not support web storage...";
+                // results.innerHTML = "Sorry, your browser does not support web storage...";
         }
-        results.innerHTML = localStorage.clickcount ;
-    } else {
-        results.innerHTML = "Sorry, your browser does not support web storage...";
-    }
+        countNamesGreeted();
 }

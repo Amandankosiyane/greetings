@@ -1,3 +1,3 @@
 function clearReset() {
-    localStorage.clickcount = 0;
+        localStorage.clickcount = 0;
 }

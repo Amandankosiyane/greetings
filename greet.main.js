@@ -1,14 +1,18 @@
-var counting = document.querySelector('#count');
 var namesGreeted = {};
-for (var i = 0; i < namesGreeted.length; i++) {
 
+function showInp() {
+        var firstName = document.getElementById("user_input").value;
+        document.getElementById('toDisplay').innerHTML = greetedNames(firstName, languagesGreeted(), clickCount);
+}
+document.getElementById("user_input").value = "";
 }
 
- showInp()
-
-
+// function countNamesGreeted(name){
+//         if(namesGreeted[name] === undefined){
+//                 namesGreeted[name] = 1;
+//         }
+//          countNamesGreeted();
+// }
 
 var clearBtn = document.getElementById("resetButton");
 clearBtn.addEventListener("click", clearReset);
-
-// clearReset()
