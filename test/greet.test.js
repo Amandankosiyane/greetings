@@ -16,11 +16,8 @@ describe('The greetedNames function', function() {
 
 describe('The clickCounter function', function() {
         it("should add value when  a new name is greeted", function() {
-                assert.equal(1, clickCount());
+                assert.equal(1, clickCounter());
         });
-        // it("should count the names greeted", function(){
-        //         assert.equal(undefined,  countNamesGreeted('Ayabulela'));
-        // })
 });
 
 

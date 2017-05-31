@@ -1,18 +1,12 @@
-var namesGreeted = {};
-
 function showInp() {
         var firstName = document.getElementById("user_input").value;
-        document.getElementById('toDisplay').innerHTML = greetedNames(firstName, languagesGreeted(), clickCount);
+        var display = document.getElementById('toDisplay');
+        display.innerHTML = greetedNames(firstName, languagesGreeted(), clickCounter);
+        var results = document.querySelector('#result');
+        results.innerHTML = clickCounter(greetedNames());
+        document.getElementById("user_input").value = "";
 }
-document.getElementById("user_input").value = "";
-}
-
-// function countNamesGreeted(name){
-//         if(namesGreeted[name] === undefined){
-//                 namesGreeted[name] = 1;
-//         }
-//          countNamesGreeted();
-// }
+countGreetings();
 
 var clearBtn = document.getElementById("resetButton");
 clearBtn.addEventListener("click", clearReset);
