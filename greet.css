@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand');
-
-
 #Greeting {
-        font-family: 'Gochi Hand',
-        border-style: inset;
+        font-family: 'Gochi Hand', border-style: inset;
         border-radius: 10px;
         border-color: black;
         padding: 1%;
@@ -17,9 +14,7 @@
         height: 100px;
         margin: auto;
         display: block;
-
         -webkit-animation: bounce .9s ease infinite alternate;
-
         color: black;
         text-align: center;
         line-height: 100px;
@@ -29,10 +24,10 @@
 @-webkit-keyframes bounce {
         100% {
                 top: -30px;
-                text-shadow: 0 1px 0 #CCC,
-                0 30px 30px rgba(0, 0, 0, .3);
+                text-shadow: 0 1px 0 #CCC, 0 30px 30px rgba(0, 0, 0, .3);
         }
 }
+
 html {
         /*background-image: url(background.jpg);*/
         background-color: #405166;
@@ -46,9 +41,6 @@ hr {
         visibility: hidden;
 }
 
-
-
-
 #inpName {
         font-style: oblique;
         width: 80%;
@@ -61,7 +53,7 @@ hr {
 }
 
 input:hover {
-        background-color: lightpink;
+        background-color: lightblue;
 }
 
 #show {
@@ -91,7 +83,6 @@ input:hover {
 
 #greetbutton:hover, #greetbutton:active {
         height: 20%;
-        ;
 }
 
 #resetButton {
@@ -105,7 +96,6 @@ input:hover {
 
 #resetButton:hover, #resetButton:active {
         height: 20%;
-        ;
 }
 
 #result {
@@ -115,17 +105,3 @@ input:hover {
         text-shadow: 1px 1px 2px white, 0 0 25px blue, 0 0 5px darkblue;
         text-align: center;
 }
-
-/*#Greeting {
-        font-family: 'Great Vibes', serif;
-        font-style: oblique;
-        font-size: 140px;
-        border-style: inset;
-        border-radius: 10px;
-        border-color: black;
-        padding: 1%;
-        max-height: inherit;
-        font-family: Helvetica;
-        background: $clr-blue;
-        text-shadow: -1px -1px 0px $clr-blue, 3px 3px 0px $clr-blue, 6px 6px 0px $clr-blue-900;
-}*/

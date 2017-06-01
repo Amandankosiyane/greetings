@@ -5,8 +5,8 @@ function clickCounter() {
                 } else {
                         localStorage.clickcount = 1;
                 }
-                return localStorage.clickcount;
+                results.innerHTML = localStorage.clickcount;
         } else {
-                return "Sorry, your browser does not support web storage...";
+                results.innerHTML =  "Sorry, your browser does not support web storage...";
         }
 }
