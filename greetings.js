@@ -5,7 +5,7 @@ function languagesGreeted() {
                 return 'xhosa';
         } else if (document.getElementById('Afrikaans').checked) {
                 return 'afrikaans';
-        }
+         }
 }
 
 
@@ -18,6 +18,6 @@ function greetedNames(names, checkedLanguages) {
         }
         if (checkedLanguages === 'afrikaans') {
                 return "Halo, " + names;
-
         }
+
 }

@@ -3,13 +3,20 @@ var results = document.querySelector('#result');
 var firstName = document.getElementById("user_input");
 
 var namesGreeted = {};
+
 function showInp() {
         if (firstName && namesGreeted[firstName.value] === undefined) {
+                console.log(firstName);
+                if (firstName.value.trim() < 3 ) {
+                alert('please write a name first and select a language');
+                return
+                }
                 namesGreeted[firstName.value] = 1;
                 display.innerHTML = greetedNames(firstName.value, languagesGreeted(), clickCounter);
                 clickCounter(greetedNames());
         } else if (firstName && namesGreeted[firstName.value] !== undefined) {
                 display.innerHTML = greetedNames(firstName.value, languagesGreeted());
+
         }
         document.getElementById("user_input").value = "";
 }
