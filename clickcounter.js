@@ -3,10 +3,10 @@ function clickCounter() {
                 if (localStorage.clickcount) {
                         localStorage.clickcount = Number(localStorage.clickcount) + 1;
                 } else {
-                        localStorage.clickcount = 1;
+                        localStorage.clickcount = 0;
                 }
                 results.innerHTML = localStorage.clickcount;
         } else {
-                results.innerHTML =  "Sorry, your browser does not support web storage...";
+                results.innerHTML = "Sorry, your browser does not support web storage...";
         }
 }

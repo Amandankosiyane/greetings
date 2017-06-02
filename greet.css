@@ -29,8 +29,8 @@
 }
 
 html {
-        /*background-image: url(background.jpg);*/
-        background-color: #405166;
+        background-image: url(http://www.froot.nl/wp-content/uploads/2011/05/water_drop-froot-nl.jpg);
+        /*background-color: #405166;*/
         background-attachment: fixed;
         background-size: cover;
         margin: 10px;
@@ -75,10 +75,13 @@ input:hover {
 #greetbutton {
         width: 20%;
         height: 30px;
-        background-color: darkblue;
+        background-image: url(button.png);
+        background-size: cover;
+        /*background-color: darkblue;*/
         border-radius: 60px;
         font-weight: bold;
         font-style: oblique;
+        cursor: pointer;
 }
 
 #greetbutton:hover, #greetbutton:active {
@@ -88,10 +91,13 @@ input:hover {
 #resetButton {
         width: 20%;
         height: 30px;
-        background-color: darkblue;
+        background-image: url(button.png);
+        background-size: cover;
+        /*background-color: darkblue;*/
         border-radius: 60px;
         font-weight: bold;
         font-style: oblique;
+        cursor: pointer;
 }
 
 #resetButton:hover, #resetButton:active {
